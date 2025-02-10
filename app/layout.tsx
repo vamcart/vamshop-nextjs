@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ModalProvider } from "@/providers/modal-provider";
 
 import "./globals.css";
+import { prismadb } from "@/lib/prismadb";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
