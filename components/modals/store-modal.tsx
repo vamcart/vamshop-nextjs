@@ -1,7 +1,7 @@
 "use client";
 
 import * as z from "zod";
-//import axios from "axios";
+import axios from "axios";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
@@ -39,7 +39,9 @@ export const StoreModal = () => {
     try {
       setLoading(true);
 
-      // const response = await axios.post("/api/stores", values);
+      const response = await axios.post("/api/stores", values);
+
+      console.log(response.data);
 
       //window.location.assign(`/${response.data.id}`);
     } catch (error) {
