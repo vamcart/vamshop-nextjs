@@ -10,49 +10,50 @@ export function MainNav({
 }: React.HTMLAttributes<HTMLElement>) {
   const pathName = usePathname();
   const params = useParams();
+
   const routes = [
     {
-      href: `/${params.storeId}`,
+      href: `/${params.storeid}`,
       label: "Overview",
-      active: pathName === `/${params.storeId}`,
+      active: pathName === `/${params.storeid}`,
     },
     {
-      href: `/${params.storeId}/billboards`,
+      href: `/${params.storeid}/billboards`,
       label: "Billboards",
-      active: pathName === `/${params.storeId}/billboards`,
+      active: pathName === `/${params.storeid}/billboards`,
     },
     {
-      href: `/${params.storeId}/categories`,
+      href: `/${params.storeid}/categories`,
       label: "Categories",
-      active: pathName === `/${params.storeId}/categories`,
+      active: pathName === `/${params.storeid}/categories`,
     },
     {
-      href: `/${params.storeId}/sizes`,
+      href: `/${params.storeid}/sizes`,
       label: "Sizes",
-      active: pathName === `/${params.storeId}/sizes`,
+      active: pathName === `/${params.storeid}/sizes`,
     },
     {
-      href: `/${params.storeId}/colors`,
+      href: `/${params.storeid}/colors`,
       label: "Colors",
-      active: pathName === `/${params.storeId}/colors`,
+      active: pathName === `/${params.storeid}/colors`,
     },
     {
-      href: `/${params.storeId}/products`,
+      href: `/${params.storeid}/products`,
       label: "Products",
-      active: pathName === `/${params.storeId}/products`,
+      active: pathName === `/${params.storeid}/products`,
     },
     {
-      href: `/${params.storeId}/orders`,
+      href: `/${params.storeid}/orders`,
       label: "Orders",
-      active: pathName === `/${params.storeId}/orders`,
+      active: pathName === `/${params.storeid}/orders`,
     },
     {
-      href: `/${params.storeId}/settings`,
+      href: `/${params.storeid}/settings`,
       label: "Settings",
-      active: pathName === `/${params.storeId}/settings`,
+      active: pathName === `/${params.storeid}/settings`,
     },
     {
-      href: "https://localhost:3000",
+      href: "http://localhost:3000",
       label: "Store",
     },
   ];
