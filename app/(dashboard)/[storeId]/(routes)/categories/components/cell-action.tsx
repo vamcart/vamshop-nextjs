@@ -44,8 +44,9 @@ export const CellAction = ({ data }: CellActionProps) => {
       toast.success("Category deleted.");
     } catch (error) {
       toast.error(
-        "Make sure you removed all Products using this Category first."
+        "Make sure you removed all Products using this Category first. "
       );
+      console.log(error);
     } finally {
       setLoading(false);
       setOpen(false);
