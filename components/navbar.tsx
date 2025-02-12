@@ -5,9 +5,7 @@ import { redirect } from "next/navigation";
 import prismadb from "@/lib/prismadb";
 import { MainNav } from "@/components/main-nav";
 import { ThemeToggle } from "./theme-toggle";
-/* import { ThemeToggle } from "./theme-toggle";
-import { Sidebar } from "./sidebar";
- */
+
 const Navbar = async () => {
   const { userId } = await auth();
 
@@ -28,7 +26,6 @@ const Navbar = async () => {
           <ThemeToggle />
           <UserButton />
         </div>
-        {/* <Sidebar /> */}
       </div>
     </div>
   );
