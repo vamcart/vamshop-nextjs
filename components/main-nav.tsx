@@ -13,44 +13,44 @@ export function MainNav({
 
   const routes = [
     {
-      href: `/${params.storeid}`,
+      href: `/${params.storeId}`,
       label: "Overview",
-      active: pathName === `/${params.storeid}`,
+      active: pathName === `/${params.storeId}`,
     },
     {
-      href: `/${params.storeid}/billboards`,
+      href: `/${params.storeId}/billboards`,
       label: "Billboards",
-      active: pathName === `/${params.storeid}/billboards`,
+      active: pathName === `/${params.storeId}/billboards`,
     },
     {
-      href: `/${params.storeid}/categories`,
+      href: `/${params.storeId}/categories`,
       label: "Categories",
-      active: pathName === `/${params.storeid}/categories`,
+      active: pathName === `/${params.storeId}/categories`,
     },
     {
-      href: `/${params.storeid}/sizes`,
+      href: `/${params.storeId}/sizes`,
       label: "Sizes",
-      active: pathName === `/${params.storeid}/sizes`,
+      active: pathName === `/${params.storeId}/sizes`,
     },
     {
-      href: `/${params.storeid}/colors`,
+      href: `/${params.storeId}/colors`,
       label: "Colors",
-      active: pathName === `/${params.storeid}/colors`,
+      active: pathName === `/${params.storeId}/colors`,
     },
     {
-      href: `/${params.storeid}/products`,
+      href: `/${params.storeId}/products`,
       label: "Products",
-      active: pathName === `/${params.storeid}/products`,
+      active: pathName === `/${params.storeId}/products`,
     },
     {
-      href: `/${params.storeid}/orders`,
+      href: `/${params.storeId}/orders`,
       label: "Orders",
-      active: pathName === `/${params.storeid}/orders`,
+      active: pathName === `/${params.storeId}/orders`,
     },
     {
-      href: `/${params.storeid}/settings`,
+      href: `/${params.storeId}/settings`,
       label: "Settings",
-      active: pathName === `/${params.storeid}/settings`,
+      active: pathName === `/${params.storeId}/settings`,
     },
     {
       href: "http://localhost:3000",

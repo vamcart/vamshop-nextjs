@@ -62,14 +62,14 @@ export const BillboardForm = ({ initialData }: BillboardFormProps) => {
       setLoading(true);
       if (initialData) {
         await axios.patch(
-          `/api/${params.storeid}/billboards/${params.billboardId}`,
+          `/api/${params.storeId}/billboards/${params.billboardId}`,
           data
         );
       } else {
-        await axios.post(`/api/${params.storeid}/billboards`, data);
+        await axios.post(`/api/${params.storeId}/billboards`, data);
       }
       router.refresh();
-      router.push(`/${params.storeid}/billboards`);
+      router.push(`/${params.storeId}/billboards`);
       toast.success(toastMessage);
     } catch (error) {
       toast.error("Something went wrong");
@@ -82,10 +82,10 @@ export const BillboardForm = ({ initialData }: BillboardFormProps) => {
     try {
       setLoading(true);
       await axios.delete(
-        `/api/${params.storeid}/billboards/${params.billoboardId}`
+        `/api/${params.storeId}/billboards/${params.billoboardId}`
       );
       router.refresh();
-      router.push(`/${params.storeid}/billboards`);
+      router.push(`/${params.storeId}/billboards`);
       toast.success("Billboard deleted.");
     } catch (error) {
       toast.error(
