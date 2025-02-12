@@ -4,6 +4,7 @@ import StoreSwitcher from "@/components/store-switcher";
 import { redirect } from "next/navigation";
 import prismadb from "@/lib/prismadb";
 import { MainNav } from "@/components/main-nav";
+import { ThemeToggle } from "./theme-toggle";
 /* import { ThemeToggle } from "./theme-toggle";
 import { Sidebar } from "./sidebar";
  */
@@ -24,7 +25,7 @@ const Navbar = async () => {
         <StoreSwitcher items={stores} />
         <MainNav className="m-6 hidden sm:block" />
         <div className="ml-auto flex items-center space-x-4">
-          {/* <ThemeToggle /> */}
+          <ThemeToggle />
           <UserButton />
         </div>
         {/* <Sidebar /> */}
