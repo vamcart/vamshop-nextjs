@@ -47,9 +47,10 @@ export async function POST(
     });
   });
 
+  const paramsData = await params;
   const order = await prismadb.order.create({
     data: {
-      storeId: params.storeId,
+      storeId: paramsData.storeId,
       isPaid: false,
       orderItems: {
         create: productIds.map((productId: string) => ({
